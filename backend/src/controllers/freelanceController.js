@@ -1,4 +1,4 @@
-const { prisma } = require(".../../config/databases");
+const { prisma } = require("../../config/databases");
 
 class FreelanceController {
 
