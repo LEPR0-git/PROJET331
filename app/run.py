@@ -32,7 +32,7 @@ def create_app():
 
     # ✅ Créer toutes les tables si elles n'existent pas
     with app.app_context():
-        from models import models  # ⚠️ important pour que SQLAlchemy connaisse les modèles
+        from model import models  # ⚠️ important pour que SQLAlchemy connaisse les modèles
         db.create_all()
         print("✅ Toutes les tables ont été créées (si manquantes)")
 
